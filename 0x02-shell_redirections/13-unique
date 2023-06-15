@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=$'\n'; sort <<< "$(grep -xvFf <(sort) <(sort -u))"
+sort | uniq -u
